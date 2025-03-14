@@ -1,66 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav id="navbar">
-    <header>Technical Documentation</header>
-    <a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a>
-    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
-    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
-    <a class="nav-link" href="#Media_Queries">Media Queries</a>
-    <a class="nav-link" href="#Other_Topics">Other Topics</a>
-  </nav>
-
-  <main id="main-doc">
-    <section class="main-section" id="HTML_and_CSS">
-      <header>HTML and CSS</header>
-      <p>This is a paragraph about HTML and CSS.</p>
-      <p>Another paragraph to provide more information.</p>
-      <code>/* This is a CSS code example */</code>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript and Java</header>
-      <p>This is a paragraph about JavaScript and Java.</p>
-      <p>Another paragraph to provide more information.</p>
-      <code>// This is a JavaScript code example</code>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </section>
-
-    <section class="main-section" id="Responsive_Design">
-      <header>Responsive Design</header>
-      <p>This is a paragraph about responsive design.</p>
-      <p>Another paragraph to provide more information.</p>
-      <code>/* Responsive design code here */</code>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </section>
-
-    <section class="main-section" id="Media_Queries">
-      <header>Media Queries</header>
-      <p>This is a paragraph about media queries.</p>
-      <p>Another paragraph to provide more information.</p>
-      <code>@media screen and (max-width: 600px) { /* Media query example */ }</code>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </section>
-
-    <section class="main-section" id="Other_Topics">
-      <header>Other Topics</header>
-      <p>This is a paragraph about other topics.</p>
-      <p>Another paragraph to provide more information.</p>
-      <code>// Other code example</code>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </section>
-  </main>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#Python_and_other_languages">Python and Other Languages</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+            <li><a class="nav-link" href="#while_statement">while statement</a></li>
+            <li><a class="nav-link" href="#Function_definitions">Function definitions</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+                </p>
+                <p>
+                    Python is widely used in web development, data analysis, artificial intelligence, scientific computing, and more. It boasts a comprehensive standard library and a vibrant community.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>A general understanding of programming concepts.</li>
+                    <li>Familiarity with basic command line operations.</li>
+                    <li>No prior knowledge of Python is required, but it may help.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Python_and_other_languages">
+            <header>Python and Other Languages</header>
+            <article>
+                <p>
+                    Python is often compared to languages like Java and C++. While Java is statically typed and requires compilation, Python is dynamically typed and interpreted, which often leads to quicker development cycles.
+                </p>
+                <p>
+                    Unlike C++, Python emphasizes readability and simplicity, making it easier for beginners to learn and use effectively.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                To get started with Python, you can write your first "Hello world" program:
+                <code>print("Hello, World!")</code>
+                <p>Run this code in your Python environment to see the output!</p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>
+                    Variables in Python are used to store data values. Python has no command for declaring a variable; you simply assign a value to a variable name:
+                </p>
+                <code>x = 5</code>
+                <p>
+                    In Python, variable names must start with a letter or an underscore (_) and can include letters, numbers, and underscores.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <article>
+                <p>
+                    You can declare variables in Python without specifying their type. For example:
+                </p>
+                <code>
+                    name = "John" <br>
+                    age = 30
+                </code>
+                <p>
+                    The variable's type is inferred from the value assigned to it.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+            <article>
+                <p>
+                    In Python, variable scope refers to the region of the code where a variable is defined. Variables defined inside a function are local to that function and cannot be accessed outside it.
+                </p>
+                <p>
+                    A variable defined outside any function is considered global and can be accessed anywhere in the code.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>
+                    In Python, you can define constants by using naming conventions. By convention, constant variable names are written in all uppercase letters:
+                </p>
+                <code>PI = 3.14</code>
+                <p>
+                    While Python does not have a built-in constant type, the convention helps signal that the variable should not be changed.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>The following are the basic data types in Python:</p>
+                <ul>
+                    <li><strong>int</strong>: Integer values (e.g., 42)</li>
+                    <li><strong>float</strong>: Floating-point values (e.g., 3.14)</li>
+                    <li><strong>str</strong>: String values (e.g., "Hello")</li>
+                    <li><strong>bool</strong>: Boolean values (True or False)</li>
+                </ul>
+                <p>
+                    Python also supports complex numbers and more advanced data structures like lists, tuples, and dictionaries.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>if...else statement</header>
+            <article>
+                <p>
+                    Use the if statement to execute a block of code if a condition is true. Optionally, use else to execute a block if the condition is false. The syntax looks like this:
+                </p>
+                <code>if condition: <br> &emsp; # execute code </code>
+                <p>Here’s an example:</p>
+                <code>
+                    if x > 0: <br> &emsp; print("Positive") <br> else: <br> &emsp; print("Non-positive")
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <article>
+                <p>
+                    A while statement repeatedly executes a block of code as long as a condition is true. Here’s the syntax:
+                </p>
+                <code>while condition: <br> &emsp; # execute code </code>
+                <p>Example:</p>
+                <code>
+                    n = 0 <br> while n < 3: <br> &emsp; print(n) <br> &emsp; n += 1
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Function_definitions">
+            <header>Function definitions</header>
+            <article>
+                <p>
+                    Functions in Python are defined using the def keyword:
+                </p>
+                <code>
+                    def greet(name): <br> &emsp; print("Hello, " + name)
+                </code>
+                <p>Call the function like this:</p>
+                <code>greet("Alice")</code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>
+                    For more information, refer to the official Python documentation: <a href="https://docs.python.org/3/">Python Docs</a>
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
